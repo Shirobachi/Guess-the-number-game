@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="850.0" style="-fx-background-color: #0B7367;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Controller">
+   <children>
+      <AnchorPane layoutY="1.0" prefHeight="54.0" prefWidth="850.0" style="-fx-background-color: #6D6BFA;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="600.0" style="-fx-text-alignment: center;" text="GUESS THE NUMBER" textFill="#faa66b" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="from" alignment="CENTER" contentDisplay="CENTER" layoutY="173.0" prefHeight="54.0" prefWidth="200.0" style="-fx-text-alignment: center;" text="From 1" textFill="#faa66b" textOverrun="CENTER_WORD_ELLIPSIS" visible="false">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="to" alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="173.0" prefHeight="54.0" prefWidth="200.0" style="-fx-text-alignment: center;" text="to 100" textFill="#faa66b" textOverrun="CENTER_WORD_ELLIPSIS" visible="false">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <TextField fx:id="guess" alignment="CENTER" layoutX="215.0" layoutY="158.0" onAction="#check" prefHeight="54.0" prefWidth="171.0" promptText="50" visible="false">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </TextField>
+      <Button fx:id="check" layoutX="215.0" layoutY="260.0" mnemonicParsing="false" onAction="#check" prefHeight="24.0" prefWidth="171.0" style="-fx-background-color: #E36DC0;" text="CHECK!" textFill="#f0e167" visible="false" />
+      <Label fx:id="info" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="335.0" prefHeight="54.0" prefWidth="600.0" style="-fx-text-alignment: center;" textFill="#faa66b" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="weak" layoutX="115.0" layoutY="298.0" mnemonicParsing="false" onAction="#tipMe" prefHeight="24.0" prefWidth="373.0" style="-fx-background-color: #FAA66B;" text="I am weak and need a tip!" textFill="#6d6bfa" visible="false" />
+      <Button fx:id="start" layoutX="215.0" layoutY="250.0" mnemonicParsing="false" onAction="#start" prefHeight="24.0" prefWidth="171.0" style="-fx-background-color: #E36DC0;" text="START" textFill="#f0e167">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Label fx:id="afterMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="-4.0" layoutY="55.0" prefHeight="182.0" prefWidth="607.0" style="-fx-text-alignment: center;" textFill="#faa66b" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="tip" alignment="CENTER" contentDisplay="CENTER" layoutY="62.0" prefHeight="54.0" prefWidth="600.0" style="-fx-text-alignment: center;" textFill="#faa66b" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="easy" layoutX="51.0" layoutY="261.0" mnemonicParsing="false" onAction="#changeToEasy" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #82D42C;" text="EASY" textFill="#8934f7" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="hard" layoutX="424.0" layoutY="261.0" mnemonicParsing="false" onAction="#changeToHard" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #D65950;" text="HARD" textFill="#8934f7">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="599.0" layoutY="-2.0" prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #0a6256;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="3.0" prefHeight="54.0" prefWidth="250.0" style="-fx-text-alignment: center;" text="SCOREBOARD" textFill="#faa66b" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreboard" alignment="TOP_LEFT" layoutX="14.0" layoutY="64.0" prefHeight="282.0" prefWidth="223.0" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="submitName" layoutX="14.0" layoutY="362.0" onAction="#submitOnClick" promptText="Your name" style="-fx-background-color: #1c8478;" visible="false" />
+            <Button fx:id="submit" layoutX="200.0" layoutY="362.0" mnemonicParsing="false" onAction="#submitOnClick" style="-fx-background-color: #1c8478;" text="⏎" textFill="WHITE" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
