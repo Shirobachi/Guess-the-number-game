@@ -255,6 +255,6 @@ public class Controller implements Initializable {
             info.setText("DB connection == false!");
         }
 
-        afterMessage.setText("Welcome my firend, \nyou're weak, aren't you?" );
+        afterMessage.setText("Welcome my friend, \nAre you ready for a game?" );
     }
 }
