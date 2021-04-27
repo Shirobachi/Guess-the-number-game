@@ -5,11 +5,11 @@ Java game guess the number :) The application will generate a random number, you
 
 ![Main windows of the game](https://i.imgur.com/31O6hyt.png)
 
-The game has two different level and when you win you can add your score to database, after that if you're the best 10 players you will be on the right scoreboard
+The game has two different levels and when you win you can add your score to the database, after that if you're the best 10 players you will be on the right scoreboard
 
 ![scoreboard](https://i.imgur.com/HV0hgOk.png)
 
-You may ask for help if you have problem with winning
+You may ask for help if you have a problem with winning
 
 ![tip](https://i.imgur.com/JZ2iBBe.png)
 
