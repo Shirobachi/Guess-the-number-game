@@ -1,7 +1,7 @@
 # guessTheNumber
 
 Java game guess the number :)
-The application will generate random number, your job is to guess as soon as possible what is the number. After each guess app will say "it too much" or "it's to little" unless you win. After win you can save your nickname on scoreboard!
+Java game guess the number :) The application will generate a random number, your job is to guess as soon as possible what is the number. After each guess app will say "it too much" or "it's too little" unless you win. After a win, you can save your nickname on the scoreboard!
 
 ![Main windows of the game](https://i.imgur.com/31O6hyt.png)
 
