@@ -1,5 +1,9 @@
 # guessTheNumber
 
+![SDK 16](https://img.shields.io/badge/SDK-16-important)
+![JAVAFX 16](https://img.shields.io/badge/JAVAFX-16-important)
+![MYSQL CONNECTOR 8.0.24](https://img.shields.io/badge/mysql--connector-8.0.24-green)
+
 Java game guess the number :)
 Java game guess the number :) The application will generate a random number, your job is to guess as soon as possible what is the number. After each guess app will say "it too much" or "it's too little" unless you win. After a win, you can save your nickname on the scoreboard!
 
