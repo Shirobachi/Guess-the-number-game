@@ -71,7 +71,6 @@ public class Controller implements Initializable {
     }
 
     public void _refreshTip() {
-//        String message = "The lucky number ∈ ";
         String message = "";
 
         if (smaller == -1 && bigger != -1)
